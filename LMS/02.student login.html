@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <title>Slog</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .content {
+        background-color: aliceblue;
+        width: 320px;
+        height: 440px;
+        border: 1px solid #ccc;
+        padding: 30px;
+        border-radius: 30px;
+        box-shadow: 8px 8px 0px 0px #75008a;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        padding: 9px;
+        background-color: rgb(199, 195, 195);
+        border: none;
+        border-radius: 20px;
+        font-size: 16px;
+        color: #333;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      i.material-icons {
+        position: absolute;
+        margin-top: 8px;
+        margin-left: 5px;
+      }
+
+      .login-button {
+        border: none;
+        background-color: #07e737;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 20px;
+        cursor: pointer;
+        width: 50%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      .login-button:hover {
+        background-color: #07da07;
+        transform: scale(1.05);
+      }
+
+      .back-button {
+        border: none;
+        background-color: grey;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      .back-button:hover {
+        background-color: darkgrey;
+      }
+    </style>
+  </head>
+  <body style="background-color: #bcabde">
+    <div style="display: flex">
+      <img
+        src="library.png"
+        alt=""
+        width="100px"
+        height="100px"
+        style="margin-top: 10px; margin-left: 20px"
+      />
+      <h1 style="margin-top: 60px; font-size: 25px">
+        Library Management System
+      </h1>
+    </div>
+    <center>
+      <div class="content" style="text-align: center">
+        <h1 style="font-size: 25px; text-transform: uppercase">
+          Student Login
+        </h1>
+        <img
+          src="grad.png"
+          alt=""
+          style="margin: 10px 0; width: 130px; height: 130px"
+        />
+        <form>
+          <i class="material-icons">person_outline</i>
+          <input
+            type="text"
+            placeholder="Register Number"
+            style="padding-left: 40px"
+            required
+          />
+          <br />
+          <i class="material-icons">key</i>
+          <input
+            type="password"
+            placeholder="Student ID"
+            style="padding-left: 40px"
+            required
+          />
+          <br />
+          <button type="submit" class="login-button">Log In</button>
+          <p style="font-size: small; font-weight: bolder">or</p>
+          <p style="font-size: small; color: blue; font-weight: bolder">
+            Contact Admin for Further Details
+          </p>
+        </form>
+      </div>
+      <br />
+    </center>
+    <center>
+      <div>
+        <a href="01.Home.html"> <button class="back-button">Back</button></a>
+      </div>
+    </center>
+  </body>
+</html>

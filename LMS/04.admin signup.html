@@ -1,0 +1,213 @@
+<html>
+  <head>
+    <title>ASup</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .adminImg {
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgb(233, 233, 233);
+        border-radius: 50%;
+      }
+
+      .content {
+        width: 750px;
+        height: 500px;
+        border: 1px solid #ccc;
+        padding: 30px;
+        border-radius: 30px;
+        background-color: aliceblue;
+        position: relative;
+      }
+
+      .left-group,
+      .right-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 40px;
+      }
+
+      .left-group {
+        align-items: flex-start;
+      }
+
+      .icon {
+        position: relative;
+        margin-bottom: 10px;
+      }
+
+      .icon i {
+        position: absolute;
+        left: 0;
+      }
+
+      .right-group {
+        align-items: flex-start;
+        margin-right: 40px;
+      }
+
+      .material-icons {
+        margin-top: 18px;
+        margin-left: 7px;
+        color: black;
+      }
+
+      input[type="text"],
+      input[type="mail"],
+      input[type="number"],
+      input[type="password"] {
+        padding: 9px;
+        background-color: rgb(199, 195, 195);
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        color: black;
+        width: 100%;
+        margin-bottom: 10px;
+        padding-left: 40px;
+        font-weight: bold;
+      }
+
+      .CNA {
+        margin-top: 10px;
+        background-color: rgb(160, 87, 255);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 20px;
+        cursor: pointer;
+        width: 30%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      .CNA:hover {
+        background-color: darkmagenta;
+        transform: scale(1.05);
+      }
+
+      .CNA:focus {
+        outline: none;
+      }
+
+      .CNA:active {
+        transform: scale(0.95);
+        box-shadow: none;
+      }
+
+      .close {
+        background-color: grey;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 12px; /* Adjust the value to control the roundness */
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      .close:hover {
+        background-color: darkgrey;
+      }
+    </style>
+  </head>
+  <body style="background-color: #7e6ca8">
+    <div style="display: flex">
+      <img
+        src="library.png"
+        width="100px"
+        height="100px"
+        style="margin-top: 10px; margin-left: 20px"
+      />
+      <h1 style="margin-top: 60px; font-size: 25px">
+        Library Management System
+      </h1>
+    </div>
+    <center>
+      <div class="content">
+        <img src="admin.png" width="150px" height="150px" class="adminImg" />
+        <br /><br /><br />
+        <h1
+          style="text-transform: uppercase; font-size: 25px; text-align: center"
+        >
+          Admin Sign Up
+        </h1>
+        <form style="margin-top: 15px; display: flex; justify-content: center">
+          <div class="left-group">
+            <div class="icon">
+              <i class="material-icons">person_outline</i>
+            </div>
+            <input type="text" placeholder="Your Name" />
+
+            <div class="icon">
+              <i class="material-icons">phone</i>
+            </div>
+            <input
+              type="number"
+              placeholder="Phone Number"
+              style="padding-left: 40px"
+            />
+
+            <div class="icon">
+              <i class="material-icons">badge</i>
+            </div>
+            <input type="text" placeholder="Staff Register Number" />
+          </div>
+
+          <div class="right-group">
+            <div class="icon right">
+              <i class="material-icons">mail_outline</i>
+            </div>
+            <input type="mail" placeholder="Mail" style="padding-left: 40px" />
+
+            <div class="icon right">
+              <i class="material-icons">key</i>
+            </div>
+            <input type="password" placeholder="Create Password" />
+
+            <div class="icon right">
+              <i class="material-icons">key</i>
+            </div>
+            <input type="password" placeholder="Confirm Password" />
+          </div>
+        </form>
+        <div>
+          <button type="submit" class="CNA">Create New Account</button>
+          <p style="font-weight: bolder; margin-top: 8px">or</p>
+        </div>
+        <div style="display: flex; margin-left: 37%">
+          <a
+            href="03.admin login.html"
+            style="font-weight: bolder; text-decoration: none; color: green"
+            >Already Have an Account</a
+          >
+          <a href="03.admin login.html">
+            <button
+              style="margin-left: 120px; margin-bottom: 30px"
+              class="close"
+            >
+              Close
+            </button></a
+          >
+        </div>
+      </div>
+    </center>
+  </body>
+</html>
